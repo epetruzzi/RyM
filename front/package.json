@@ -10,6 +10,7 @@
   "author": "webpt22a_grupo03",
   "license": "ISC",
   "dependencies": {
+    "boostrap": "^2.0.0",
     "bootstrap": "^5.3.3",
     "live-server": "^1.2.2",
     "serve": "^14.2.3"

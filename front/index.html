@@ -3,16 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/reset.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <title>Ryck and Morty App</title>
+    <script src="scripts/loader.js" defer></script>
+    <title>Rick and Morty App</title>
   </head>
-  <body>
+  <body class="d-flex flex-column min-vh-100">
     <div id="custom-loader"></div>
     <div id="content" style="display: none">
-      <!-- Aquí va el contenido de tu página -->
+      <!-- Contenido de la página -->
+      <header class="container-fluid py-3 bg-transparent position-relative">
+        <div class="row align-items-center">
+          <div class="col-auto">
+            <img src="ruta/a/tu/logo.png" alt="Logo" class="img-fluid" />
+          </div>
+          <div class="col-auto ms-auto">
+            <nav>
+              <ul class="list-inline mb-0">
+                <li class="list-inline-item">
+                  <a href="#garage" class="text-dark">Garage</a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#about" class="text-dark">About</a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#contact" class="text-dark">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="header-bg"></div>
+      </header>
+      <main class="container flex-grow-1">
+        <!-- Aquí va el contenido principal de tu página -->
+      </main>
     </div>
-    <script src="scripts/loader.js"></script>
+
+    <footer class="footer py-3 mt-auto bg-transparent" style="display: none">
+      <div class="container text-center">
+        <!-- Contenido del footer -->
+        <p>&copy; 2024 Webpt22a_grupo03. Todos los derechos reservados.</p>
+      </div>
+    </footer>
   </body>
 </html>

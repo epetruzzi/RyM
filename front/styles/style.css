@@ -24,6 +24,16 @@
     background-position: 50% 50%, 0 50%, 100% 50%, 50% 50%;
   }
 }
+
+@font-face {
+  font-family: "Get Schwifty";
+  src: url("../assets/fonts/get_schwifty.ttf");
+}
+@font-face {
+  font-family: "Wubba Lubba Dub Dub";
+  src: url("../assets/fonts/WubbaLubbaDubDub.ttf");
+}
+
 html,
 body {
   height: 100%;
@@ -65,7 +75,7 @@ header {
 
 /* Estilos para el logo */
 .logo {
-  width: 100px;
+  width: 150px;
 }
 
 nav ul {
@@ -73,6 +83,7 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
+  gap: 20px;
 }
 
 nav ul li {
@@ -86,7 +97,9 @@ nav ul li:last-child {
 nav ul li a {
   text-decoration: none;
   color: #333;
+  font-family: "Wubba Lubba Dub Dub";
   font-weight: bold;
+  font-size: 24px;
   transition: color 0.3s ease;
 }
 

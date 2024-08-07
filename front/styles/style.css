@@ -1,103 +1,109 @@
 #custom-loader {
-    width: 50px;
-    height: 28px;
-    --c: radial-gradient(farthest-side, #766DF4 90%, #0000);
-    background: 
-        var(--c) 0 50%, 
-        var(--c) 50% 50%, 
-        var(--c) 50% 50%, 
-        var(--c) 100% 50%;
-    background-size: 12px 12px;
-    background-repeat: no-repeat;
-    animation: d2 1s infinite linear;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  width: 50px;
+  height: 28px;
+  --c: radial-gradient(farthest-side, #766df4 90%, #0000);
+  background: var(--c) 0 50%, var(--c) 50% 50%, var(--c) 50% 50%,
+    var(--c) 100% 50%;
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  animation: d2 1s infinite linear;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @keyframes d2 {
-    33% {
-        background-position: 0 0, 50% 100%, 50% 100%, 100% 0;
-    }
-    66% {
-        background-position: 50% 0, 0 100%, 100% 100%, 50% 0;
-    }
-    100% {
-        background-position: 50% 50%, 0 50%, 100% 50%, 50% 50%;
-    }
+  33% {
+    background-position: 0 0, 50% 100%, 50% 100%, 100% 0;
+  }
+  66% {
+    background-position: 50% 0, 0 100%, 100% 100%, 50% 0;
+  }
+  100% {
+    background-position: 50% 50%, 0 50%, 100% 50%, 50% 50%;
+  }
 }
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 /* Estilos para la imagen de fondo */
 body.loaded {
-    background-image: url('../assets/garage.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  background-image: url("../assets/garage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body.loaded.body-cha {
+  background-image: url("../assets/characters\ background.jpg");
+}
+body.loaded.body-loc {
+  background-image: url("../assets/location\ background.jpg");
+}
+body.loaded.body-epi {
+  background-image: url("../assets/episodes\ background.jpg");
 }
 /* Estilos para el header */
 header {
-    backdrop-filter: blur(5px); 
-    -webkit-backdrop-filter: blur(5px);
-    background-color: rgba(255, 255, 255, 0.8); 
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .header-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.151); 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.151);
 }
 
 /* Estilos para el logo */
 .logo {
-    width: 100px; 
+  width: 100px;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 nav ul li {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 nav ul li:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #333; 
-    font-weight: bold;
-    transition: color 0.3s ease;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #007bff; 
+  color: #007bff;
 }
 .fullscreen {
-
-    height: 60vh;
-
-  }
-
-.gif{
-    width: 40vh;
-    transition: filter 0.3s ease-in-out;
+  height: 60vh;
 }
-.gif:hover{
-    filter: drop-shadow(0px 0px 18px #0cf61a);
+
+.gif {
+  width: 40vh;
+  transition: filter 0.3s ease-in-out;
 }
-.rym{
-    width: 60vh;
+.gif:hover {
+  filter: drop-shadow(0px 0px 18px #0cf61a);
+}
+.rym {
+  width: 60vh;
 }
